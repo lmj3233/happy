@@ -163,6 +163,38 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section">
+          <div className="wrap">
+            <div className="promo">
+              <div className="promo-main">
+                <span className="promo-badge">创业扶持</span>
+                <h3>为早期团队准备的创业计划</h3>
+                <p>
+                  成立三年内的团队可申请：前 6 个月免费额度、专属技术支持，以及上线前的架构评审，把有限的精力留给产品本身。
+                </p>
+                <div className="promo-tags">
+                  <span>6 个月免费额度</span>
+                  <span>专属技术支持</span>
+                  <span>上线前架构评审</span>
+                </div>
+                <a className="btn btn-dark" href="#">
+                  申请加入
+                </a>
+              </div>
+              <aside className="promo-side">
+                <div className="promo-stat">
+                  <b>6</b>
+                  <span>个月免费</span>
+                </div>
+                <div className="promo-stat">
+                  <b>24h</b>
+                  <span>响应时间</span>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
         <div className="wrap">
           <section className="cta" id="start">
             <h2>准备好把项目上线了吗？</h2>

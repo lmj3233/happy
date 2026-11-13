@@ -343,6 +343,112 @@ p {
   color: var(--muted);
 }
 
+/* ---------- promo (startup card) ---------- */
+.promo {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  gap: 32px;
+  align-items: center;
+  padding: 38px;
+  border: 1px solid #dde6f7;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #f8fafc 0%, #eef4ff 55%, #f6f3ff 100%);
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  bottom: -120px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.14), transparent 70%);
+  pointer-events: none;
+}
+
+.promo-main {
+  position: relative;
+}
+
+.promo-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #dbe6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.promo h3 {
+  margin-top: 14px;
+  font-size: clamp(20px, 2.6vw, 26px);
+  line-height: 1.3;
+  letter-spacing: -0.022em;
+  font-weight: 680;
+}
+
+.promo p {
+  margin-top: 10px;
+  max-width: 540px;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+.promo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.promo-tags span {
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.promo .btn {
+  margin-top: 24px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.promo-side {
+  position: relative;
+  display: grid;
+  gap: 12px;
+}
+
+.promo-stat {
+  padding: 18px 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.promo-stat b {
+  display: block;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.promo-stat span {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
 /* ---------- cta ---------- */
 .cta {
   position: relative;
@@ -436,6 +542,16 @@ p {
 
   .section {
     padding: 48px 0;
+  }
+
+  .promo {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 26px;
+  }
+
+  .promo-side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
